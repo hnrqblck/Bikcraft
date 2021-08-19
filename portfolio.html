@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/portfolio.css">
     <link rel="stylesheet" href="css/responsivo.css">
+    <script>document.documentElement.classList.add("js");</script>
     <title>Bikcraft - Portfólio</title>
 </head>
 
@@ -40,23 +41,36 @@
 
     <section class="introducao-interna interna_portfolio">
         <div class="container">
-            <h1>Portfólio</h1>
-            <p>conheça os projetos que amamos mostrar</p>
+            <h1 class="fadeInDown" data-anime="400">Portfólio</h1>
+            <p class="fadeInDown" data-anime="800">conheça os projetos que amamos mostrar</p>
         </div>
     </section>
 
-    <section class="container">
+    <section class="container fadeInDown" data-slide="quote" data-anime="1200">
         <blockquote class="quote_clientes">
             <p>"No mundo atual, a continua expansão da nossa atividade cumpre um papel essencial na formulação da gestão inovadora  da qual fazemos parte."</p>
             <cite>Barbara Moss</cite>
         </blockquote>
+        <blockquote class="quote_clientes">
+            <p>"Pedalar é sentir-se livre, e ter autonomia para a escolha dos caminhos, por mais que já tenhamos ido nos lugares, cada vez que retornamos conseguimos ter um novo olhar."</p>
+            <cite>Rosicler Ceschin</cite>
+        </blockquote>
+        <blockquote class="quote_clientes">
+            <p>"⁠Pra que carro? Pergunto-lhe. Visto que nasci com duas pernas, no máximo posso pedalar. Não existe meio de transporte melhor do que aquele que temos a liberdade de fantasiar."</p>
+            <cite>Margla Michels</cite>
+        </blockquote>
     </section>
 
-    <section class="portfolio">
-        <div class="container">
+    <section class="portfolio fadeInDown" data-anime="1600">
+        <div class="container" data-slide="portfolio">
             <ul class="portfolio_lista">
                 <li class="grid-8"><img src="img/portfolio/retro.jpg" alt="Bicicleta retrô"></li>
                 <li class="grid-8"><img src="img/portfolio/passeio.jpg" alt="Bicicleta passeio"></li>
+                <li class="grid-16"><img src="img/portfolio/esporte.jpg" alt="Bicicleta esporte"></li>
+            </ul>
+            <ul class="portfolio_lista">
+                <li class="grid-8"><img src="img/portfolio/passeio.jpg" alt="Bicicleta passeio"></li>
+                <li class="grid-8"><img src="img/portfolio/retro.jpg" alt="Bicicleta retrô"></li>
                 <li class="grid-16"><img src="img/portfolio/esporte.jpg" alt="Bicicleta esporte"></li>
             </ul>
         </div>
@@ -109,5 +123,9 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/simple-slide.js"></script>
+    <script src="js/simple-anime.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
